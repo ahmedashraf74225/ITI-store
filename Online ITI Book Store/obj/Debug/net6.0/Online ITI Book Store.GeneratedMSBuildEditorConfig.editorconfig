@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Online_ITI_Book_Store
+build_property.RootNamespace = Online_ITI_Book_Store
+build_property.ProjectDir = F:\New folder (6)\Online ITI Book Store\Online ITI Book Store\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = F:\New folder (6)\Online ITI Book Store\Online ITI Book Store
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/books/catalogue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYm9va3NcY2F0YWxvZ3VlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/books/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYm9va3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/books/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYm9va3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/books/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYm9va3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/books/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYm9va3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/books/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYm9va3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/customerOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXGN1c3RvbWVyT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/customerreport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXGN1c3RvbWVycmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/orders/myorders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncb3JkZXJzXG15b3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/useraccounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcmFjY291bnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/useraccounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcmFjY291bnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/useraccounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcmFjY291bnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/useraccounts/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcdXNlcmFjY291bnRzXGxvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/New folder (6)/Online ITI Book Store/Online ITI Book Store/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-qkrkn6al0l

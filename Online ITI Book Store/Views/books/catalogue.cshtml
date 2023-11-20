@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Online_ITI_Book_Store.Models.book>
+
+@{
+    ViewData["Title"] = "Catalogue";
+}
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<style>
+    /* Custom styling for the catalog page */
+    body {
+        background-color: #f5f5f5;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        color: #428bca; /* Blue color */
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .card-header {
+        background-color: #428bca; /* Blue color */
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+        .card-body img {
+            max-height: 150px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+    .card-footer {
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 10px;
+    }
+
+        .card-footer a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out; /* Add color transition animation */
+        }
+
+            .card-footer a:hover {
+                color: #28a745; /* Change color on hover */
+            }
+
+    .price {
+        font-size: 1.2rem;
+        color: #dc3545; /* Red color */
+        margin-top: 10px;
+    }
+
+    .price-word {
+        font-size: 1rem;
+        color: #333; /* Dark gray color */
+    }
+
+    .card-body:hover .price {
+        transform: scale(1.1); /* Add scale transformation on hover */
+    }
+</style>
+
+<h1 class="styled-heading">Catalogue</h1>
+
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        @item.title
+                    </div>
+                    <div class="card-body">
+                        <img src="~/images/@item.imgfile" height="150" /> <br />
+                        <span class="price-word">Price: </span><span class="price">@item.price</span>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-controller="orders" asp-action="Create"
+                           asp-route-id="@item.Id">Buy</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

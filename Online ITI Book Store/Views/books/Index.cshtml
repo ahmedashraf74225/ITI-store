@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Online_ITI_Book_Store.Models.book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <!-- Add the Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mt-5 display-4">Book Catalog</h1>
+        <p>
+            <a class="btn btn-primary mb-3" asp-action="Create">Create New</a>
+        </p>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.title)</th>
+                    <th>@Html.DisplayNameFor(model => model.info)</th>
+                    <th>@Html.DisplayNameFor(model => model.bookquantity)</th>
+                    <th>@Html.DisplayNameFor(model => model.price)</th>
+                    <th>@Html.DisplayNameFor(model => model.cataid)</th>
+                    <th>@Html.DisplayNameFor(model => model.author)</th>
+                    <th>@Html.DisplayNameFor(model => model.imgfile)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.title)</td>
+                        <td>@Html.DisplayFor(modelItem => item.info)</td>
+                        <td>@Html.DisplayFor(modelItem => item.bookquantity)</td>
+                        <td>@Html.DisplayFor(modelItem => item.price)</td>
+                        <td>@Html.DisplayFor(modelItem => item.cataid)</td>
+                        <td>@Html.DisplayFor(modelItem => item.author)</td>
+                        <td>@Html.DisplayFor(modelItem => item.imgfile)</td>
+                        <td>
+                            <a class="btn btn-sm btn-primary mb-1" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                            <a class="btn btn-sm btn-info mb-1" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                            <a class="btn btn-sm btn-danger mb-1" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

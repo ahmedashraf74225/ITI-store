@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Online_ITI_Book_Store.Models.orders>
+
+@{
+    ViewData["Title"] = "myorders";
+}
+@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<style>
+    /* Style for the table header */
+    .table thead th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    /* Alternating row colors for better readability */
+    .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    /* Hover effect for table rows */
+    .table tbody tr:hover {
+        background-color: #d0e9ff;
+    }
+
+    /* Style for action links */
+    .table td a {
+        color: #007bff;
+        margin-right: 5px;
+    }
+</style>
+
+    <h1 class="my-4 text-danger">My Orders</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.bookId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderdate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bookId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.quantity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.orderdate)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

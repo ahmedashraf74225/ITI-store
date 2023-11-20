@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+@{
+    Layout = null;
+}
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" />
+    <title>Login</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2; /* Change background color */
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+        }
+
+        .login-form .btn-primary {
+            width: 100%;
+            border-radius: 3px;
+            margin-top: 10px; /* Add margin top to the button */
+            background-color: #3498db; /* Change button background color */
+            border-color: #3498db; /* Change button border color */
+        }
+
+        .login-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; /* Change title color */
+        }
+
+        .login-form label {
+            font-weight: bold;
+            color: #555; /* Change label color */
+        }
+
+        .login-form .form-control {
+            border-radius: 3px;
+        }
+
+        .login-form .btn-primary {
+            width: 100%;
+            border-radius: 3px;
+        }
+
+        .create-account-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #777; /* Change link color */
+        }
+
+        /* Adjust the error message color */
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h2 class="login-title">Login</h2>
+            <form asp-action="login" class="login-form">
+                <div class="form-group">
+                    <label for="na">Username</label>
+                    <input name="na" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="pa">Password</label>
+                    <input name="pa" type="password" class="form-control" />
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p class="error-message">@ViewData["message"]</p>
+            </form>
+            <a asp-action="Create" class="create-account-link">Create Account</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿@model Online_ITI_Book_Store.Models.book
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<style>
+    .heading-container {
+        border-top: 1px solid #ccc; /* Add a border at the top */
+        padding-top: 20px; /* Add some padding to separate the border from the heading */
+    }
+</style>
+
+<div class="container mt-5 text-center heading-container">
+    <h1 class="mb-4" style="color: #FF5733;">Buy Book</h1>
+</div>
+
+<hr />
+<dl class="row">
+    <dt class="col-sm-2" style="font-weight: bold; color: #333;">ID</dt>
+    <dd class="col-sm-10" style="color: #555;">@Html.DisplayFor(model => model.Id)</dd>
+
+    <dt class="col-sm-2" style="font-weight: bold; color: #333;">Title</dt>
+    <dd class="col-sm-10" style="color: #555;">@Html.DisplayFor(model => model.title)</dd>
+
+    <dt class="col-sm-2" style="font-weight: bold; color: #333;">Info</dt>
+    <dd class="col-sm-10" style="color: #555;">@Html.DisplayFor(model => model.info)</dd>
+
+    <dt class="col-sm-2" style="font-weight: bold; color: #333;">Quantity</dt>
+    <dd class="col-sm-10" style="color: #555;">@Html.DisplayFor(model => model.bookquantity)</dd>
+
+    <dt class="col-sm-2" style="font-weight: bold; color: #333;">Price</dt>
+    <dd class="col-sm-10" style="color: #555;">@Html.DisplayFor(model => model.price)</dd>
+
+    <dt class="col-sm-2" style="font-weight: bold; color: #333;">Author</dt>
+    <dd class="col-sm-10" style="color: #555;">@Html.DisplayFor(model => model.author)</dd>
+
+    <dt class="col-sm-2" style="font-weight: bold; color: #333;">Pic</dt>
+    <dd class="col-sm-10">
+        <img src="~/images/@Model.imgfile" class="img-fluid" alt="@Model.imgfile" />
+        <br /><span style="color: #777;">@Model.imgfile</span>
+    </dd>
+</dl>
+
+
+
+
+<h4 class="mt-5">Orders</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" class="border p-4 rounded shadow-sm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" name="bookId" value="@Model.Id" />
+
+            <div class="form-group">
+                <label class="control-label">Quantity</label>
+                <input name="quantity" class="form-control" />
+            </div>
+
+            <div class="form-group mt-3">
+                <input type="submit" value="Buy" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a asp-controller="Books" asp-action="catalogue" class="btn btn-secondary">Back to Catalogue</a>
+</div>
+

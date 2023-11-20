@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Online_ITI_Book_Store.Models.report>
+
+@{
+    ViewData["Title"] = "customerreport";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <!-- Add the Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mt-5">Customer Report</h1>
+        <p>
+            <a class="btn btn-primary" asp-action="Create">Create New</a>
+        </p>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.customername)</th>
+                    <th>@Html.DisplayNameFor(model => model.total)</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.customername)</td>
+                        <td>@Html.DisplayFor(modelItem => item.total)</td>
+                        <td>
+                            <a class="btn btn-info" asp-action="customerOrders" asp-route-id="@item.Id">Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
